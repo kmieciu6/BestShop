@@ -102,6 +102,7 @@ h1 {
 }
 
 .banner .background {
+    background-image: url("../images/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
