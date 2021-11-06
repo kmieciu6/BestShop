@@ -101,7 +101,7 @@ h1 {
     font-weight: bold;
 }
 
-.banner img {
+.banner .background {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
