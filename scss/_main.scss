@@ -3,6 +3,7 @@ $tablet: "screen and (min width: 768px) and (max-width: 1023px)";
 $desktop: "screen and (min width: 1024px)";
 
 main {
+  width: 100%;
   margin-top: 11rem;
   display: flex;
   flex-direction: column;
@@ -213,7 +214,6 @@ p {
 
   &__text {
     margin-top: 5rem;
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -372,7 +372,6 @@ p {
 
 .pricing {
   margin-top: 6.3rem;
-  z-index: 2;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -382,6 +381,13 @@ p {
     margin-top: 1.3rem;
     align-items: center;
     flex-wrap: wrap;
+
+    @media #{$mobile}, #{$tablet} {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
 
     .price__title {
       font-family: Raleway, serif;
