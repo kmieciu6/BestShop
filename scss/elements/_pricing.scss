@@ -1,0 +1,114 @@
+.pricing {
+  margin-top: 6.3rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  &__box {
+    display: flex;
+    margin-top: 1.3rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .price__title {
+      font-family: Raleway, serif;
+      font-size: 1.2rem;
+      color: #13253B;
+      padding-top: 0.3rem;
+    }
+
+    &__basic,
+    &__professional,
+    &__premium {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__basic {
+      border: 1px solid #FB3B64;
+      border-radius: 18px;
+      width: 20em;
+      height: 30em;
+    }
+
+    &__professional {
+      border: 1px solid #07ACE6;
+      border-radius: 18px;
+      width: 23em;
+      height: 33em;
+      margin-left: 3.8rem;
+      margin-right: 3.8rem;
+      box-shadow: 5px 10px 27px #07ACE629;
+    }
+
+    &__premium {
+      border: 1px solid #55DFB4;
+      border-radius: 18px;
+      width: 20em;
+      height: 30em;
+      }
+    }
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    .price1 {
+      color: #FB3B64;
+      padding-top: 0.9rem;
+      font-size: 2.9rem;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      padding-bottom: 3.8rem;
+    }
+
+    .price__title__pro {
+      font-family: Raleway, serif;
+      font-size: 1.3rem;
+      color: #13253B;
+      padding-top: 0.3rem;
+    }
+
+    .price2 {
+      color: #07ACE6;
+      padding-top: 0.9rem;
+      font-size: 2.9rem;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+      padding-bottom: 1.3rem;
+    }
+
+    .price3 {
+      color: #55DFB4;
+      padding-top: 0.9rem;
+      font-size: 2.9rem;
+      font-family: "Open Sans", serif;
+      font-weight: 300;
+    }
+
+    .limited__ofert {
+      padding-top: 0.6rem;
+      font-size: 0.8rem;
+      color: #13253B;
+      font-family: Raleway, serif;
+      font-weight: bold;
+      padding-bottom: 2.5rem;
+    }
+
+    .ptaszek,
+    .krzyżyk {
+      padding-top: 1.5rem;
+    }
+
+    span {
+      color: #55DFB4;
+    }
+
+    .red {
+      color: #EB476E;
+    }
+  }

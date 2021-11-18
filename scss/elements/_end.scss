@@ -1,0 +1,119 @@
+.end {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  flex-wrap: wrap;
+}
+
+.questions {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  p {
+    font-size: 1rem;
+    font-family: "Open Sans", serif;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+
+    p {
+      margin: 0.3rem 1.9rem 0 0.3rem;
+      color: #A5A5A5;
+      font-family: "Open Sans", serif;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .mail {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+
+    .phone {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+}
+
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    span {
+      color: #08A6E4;
+      font-size: 0.7rem;
+      font-family: "Open Sans", serif;
+      font-weight: bold;
+    }
+
+    input {
+      margin-top: 0.6rem;
+      margin-bottom: 1.9rem;
+      border: none;
+      border-bottom: 1px solid #95989A;
+    }
+  }
+
+  .regulamin {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 1.9rem;
+
+    .checkbox {
+      display: none;
+    }
+
+    input + label {
+      position: relative;
+      margin-right: 10%;
+      cursor: pointer;
+    }
+
+    input + label::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: #FFFFFF;
+      border: 1px solid #95989A;
+      border-radius: 4px;
+    }
+
+    input:checked + label:before {
+      background-image: url("../../images/Checkmark.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    p {
+      cursor: pointer;
+      color: #707070;
+      font-size: 0.8rem;
+      font-family: "Open Sans", serif;
+      padding-left: 3rem;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+  }
+}

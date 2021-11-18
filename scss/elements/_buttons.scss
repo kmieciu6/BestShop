@@ -1,0 +1,18 @@
+.button {
+  border: 0;
+  background: #07ACE6;
+  padding: 10rem;
+  color: black;
+  transition: 0.5s;
+
+  &:hover {
+    color: black;
+    border-radius: 40px 10px 40px 10px;
+  }
+
+  &:active {
+    background-color: darkblue;
+    color: white;
+    box-shadow: 0 5px #666;
+  }
+}

@@ -1,9 +1,11 @@
 @import "generic/reset";
-@import "setting/colors";
-@import "setting/fonts";
-@import "setting/buttons";
-@import "setting/mixins";
-@import "setting/index";
+
+@import "setting";
+
+@import "elements/buttons";
 @import "elements/header";
-@import "elements/main";
+@import "elements/base";
+@import "elements/banner";
+@import "elements/pricing";
+@import "elements/end";
 @import "elements/footer";
