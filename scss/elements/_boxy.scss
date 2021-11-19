@@ -24,15 +24,14 @@
 
     @include desktop {
       margin-top: 3rem;
-      width: 80%;
       flex-direction: row;
-      justify-content: space-between;
     }
   }
 
   @include desktop {
     width: 80%;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -71,6 +70,7 @@
 
 h2 {
   margin: 4rem 0 2rem 0;
+  text-align: start;
 
   @include desktop {
     margin-top: 2rem;
@@ -123,21 +123,36 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  position: relative;
+
+  @include desktop {
+    width: 50%;
+  }
 
   &__circle {
-    width: 18rem;
-    height: 18rem;
-    background: #07ACE6;
+    width: 8rem;
+    height: 8rem;
+    background: $background-color-primary;
     border-radius: 100%;
     z-index: 0;
     position: relative;
+    right: 2rem;
+    bottom: 1rem;
+
+    @include desktop {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   .iPhone {
-    width: 22rem;
+    width: 11rem;
     z-index: 1;
     position: absolute;
+
+    @include desktop {
+      width: 28rem;
+    }
   }
 }
 
