@@ -9,7 +9,7 @@
   font-family: $font-secondary;
 
   &__red {
-  background: $background-color-red;
+    background: $background-color-red;
   }
 
   &__green {
@@ -17,8 +17,10 @@
   }
 
   &:hover {
-    color: black;
-    border-radius: 40px 10px 40px 10px;
+    @include desktop {
+      color: black;
+      border-radius: 40px 10px 40px 10px;
+    }
   }
 
   &:active {
