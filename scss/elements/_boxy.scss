@@ -17,6 +17,7 @@
   background: $background-color-white;
   border: 1px solid $border-lightgrey;
   border-radius: 5px;
+  overflow: hidden;
 
   &:first-child {
     flex-direction: column-reverse;
@@ -170,16 +171,19 @@
 
   @include desktop {
     flex-direction: row;
+    margin-bottom: 3rem;
   }
 
   .box__text {
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     border: 1px solid $border-lightgrey;
     background: $background-color-white;
+    border-radius: 5px;
 
     @include desktop {
       width: 60%;
       margin-right: 2.5rem;
+      padding-bottom: 0;
     }
   }
 
@@ -190,6 +194,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 
     @include desktop {
       width: 35%;
