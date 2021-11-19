@@ -34,46 +34,46 @@
     width: 80%;
     flex-direction: row;
   }
+}
 
-  &__text,
-  &__container__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.box__text,
+.box__container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    @include desktop {
-      width: 40%;
-    }
+  @include desktop {
+    width: 40%;
+  }
 
-    &__border {
-
-      @include desktop {
-        margin: 4rem 0;
-        width: 20rem;
-      }
-    }
+  &__border {
 
     @include desktop {
-      .border__red {
-        border: 2px solid $background-color-red;
-      }
-
-      .border__blue {
-        border: 2px solid $background-color-primary;
-      }
-
-      .border__green {
-        border: 2px solid $background-color-green;
-      }
+      margin: 4rem 0;
+      width: 20rem;
     }
   }
 
-  h2 {
-    margin: 4rem 0 2rem 0;
-
-    @include desktop {
-      margin-top: 2rem;
+  @include desktop {
+    .border__red {
+      border: 2px solid $background-color-red;
     }
+
+    .border__blue {
+      border: 2px solid $background-color-primary;
+    }
+
+    .border__green {
+      border: 2px solid $background-color-green;
+    }
+  }
+}
+
+h2 {
+  margin: 4rem 0 2rem 0;
+
+  @include desktop {
+    margin-top: 2rem;
   }
 }
 
