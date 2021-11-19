@@ -3,44 +3,52 @@ header {
   position: fixed;
   background: white;
   width: 100%;
-  top: 0;
   z-index: 2;
 }
 
 .container {
   height: 4.4rem;
-  margin: 0 auto;
+  margin: 0 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @include desktop {
+    justify-content: space-around;
+    margin: 0;
+  }
 
   a {
     text-decoration: none;
     color: #08A6E4;
-    font-family: Raleway, serif;
+    font-family: $font-primary;
     font-weight: lighter;
     font-size: 2rem;
     padding-top: 1rem;
   }
 
   ul {
-    display: flex;
-    margin-top: 1.5rem;
+    display: none;
 
-    a {
-      color: #A5A5A5;
-      text-decoration: none;
-      text-transform: uppercase;
-      padding: 1.5rem 1.3rem;
-      margin: 0 1.5rem;
-      font-size: 0.7rem;
-      font-weight: bold;
-      font-family: "Open Sans", serif;
+    @include desktop {
+      display: flex;
+      margin-top: 1.5rem;
 
-      &:hover {
-        color: #000000;
-        padding-bottom: 1.8rem;
-        border-bottom: 4px solid #08A6E4;
-        opacity: 1;
+      a {
+        color: #A5A5A5;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 1.3rem;
+        margin: 0 1.5rem;
+        font-size: 0.7rem;
+        font-weight: bold;
+        font-family: "Open Sans", serif;
+
+        &:hover {
+          color: #000000;
+          padding-bottom: 1.8rem;
+          border-bottom: 4px solid #08A6E4;
+          opacity: 1;
+        }
       }
     }
   }

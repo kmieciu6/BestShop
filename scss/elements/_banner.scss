@@ -1,14 +1,28 @@
+.banner {
+margin-top: 12rem;
+}
+
 .banner__text {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
   p {
-    color: black;
-    font-family: "Open Sans", serif;
-    font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .button__first {
+    width: 90%;
+
+    @include desktop {
+      width: 25rem;
+      padding: 1.3rem 0;
+    }
   }
 }
 
@@ -20,7 +34,7 @@
   height: 80%;
 }
 
-.section {
+.popular {
   width: 80%;
   height: 50vh;
   display: flex;
@@ -29,21 +43,10 @@
   justify-items: center;
   margin-top: 4rem;
 
-  h3 {
-    font-family: Raleway, serif;
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: black;
-  }
-
   p {
-    color: #A5A5A5;
-    font-size: 1rem;
-    font-weight: normal;
-    font-family: Raleway, serif;
+    color: $color-light;
+    font-family: $font-primary;
     width: 8rem;
-    text-align: center;
-    margin: 0;
   }
 
   .section__title {
