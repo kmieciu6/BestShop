@@ -1,4 +1,5 @@
 .end {
+  margin-top: 6rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9,7 +10,6 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   p {
     font-size: 1rem;
