@@ -8,7 +8,7 @@
     display: flex;
     margin-top: 1.3rem;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     .price__title {
       font-family: Raleway, serif;
@@ -20,6 +20,7 @@
     &__basic,
     &__professional,
     &__premium {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -49,13 +50,6 @@
       height: 30em;
       }
     }
-  }
-
-  &__ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
 
     .price1 {
       color: #FB3B64;
@@ -112,3 +106,12 @@
       color: #EB476E;
     }
   }
+
+
+/*&__red,
+&__blue,
+&__green {
+  position: absolute;
+  bottom: -1.3rem;
+}
+*/

@@ -1,9 +1,24 @@
 .button {
   border: 0;
+  border-radius: 40px;
+  padding: 0.8rem 4rem;
   background: #07ACE6;
-  padding: 10rem;
-  color: black;
+  color: white;
   transition: 0.5s;
+  margin-top: 3rem;
+  font-weight: bold;
+
+  &__first {
+    padding: 0.8rem 14rem;
+  }
+
+  &__red {
+  background: #FB3B64;
+  }
+
+  &__green {
+    background: #55DFB4;
+  }
 
   &:hover {
     color: black;
@@ -13,6 +28,5 @@
   &:active {
     background-color: darkblue;
     color: white;
-    box-shadow: 0 5px #666;
   }
 }
