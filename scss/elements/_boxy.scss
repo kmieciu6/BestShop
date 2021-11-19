@@ -11,7 +11,7 @@
   padding: 2rem;
   margin-top: 3rem;
   width: 95%;
-  height: 50vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   background: $background-color-white;
@@ -20,10 +20,13 @@
 
   &:first-child {
     flex-direction: column-reverse;
+    margin-top: 0.5rem;
 
     @include desktop {
+      margin-top: 3rem;
       width: 80%;
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -39,14 +42,14 @@
     justify-content: center;
 
     @include desktop {
-      width: 50%;
+      width: 40%;
     }
 
     &__border {
 
       @include desktop {
-        margin-top: 4rem;
-        width: 25rem;
+        margin: 4rem 0;
+        width: 20rem;
       }
     }
 
@@ -66,7 +69,11 @@
   }
 
   h2 {
-    margin: 2rem 0;
+    margin: 4rem 0 2rem 0;
+
+    @include desktop {
+      margin-top: 2rem;
+    }
   }
 }
 
@@ -76,31 +83,39 @@
   align-items: center;
 
   @include desktop {
-    width: 45%;
+    width: 50%;
   }
 
   .macbook {
+    margin-top: 1rem;
     position: absolute;
-    width: 17rem;
-    height: 10rem;
+    width: 13rem;
+    height: 7rem;
     z-index: 1;
 
     @include desktop {
-      width: 21rem;
-      height: 11rem;
+      width: 24rem;
+      height: 13rem;
     }
-    }
+  }
 
   .matrix {
     position: relative;
-    left: 4.5rem;
-    bottom: 2.5rem;
-    width: 11.2rem;
-    height: 11.2rem;
-    background: #FB3B64;
+    left: 4rem;
+    bottom: 1.5rem;
+    width: 6rem;
+    height: 6rem;
+    background: $background-color-red;
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     border-radius: 41px;
     z-index: 0;
+
+    @include desktop {
+      left: 6rem;
+      bottom: 3rem;
+      width: 11.2rem;
+      height: 11.2rem;
+    }
   }
 }
 
