@@ -119,59 +119,28 @@
   }
 }
 
-//.box {
-//  margin-top: 3rem;
-//  width: 65%;
-//  height: 60vh;
-//  display: flex;
-//  justify-content: center;
-//  background: $background-color-white;
-//  border: 1px solid #E8E9ED;
-//  border-radius: 5px;
-//
-//  .box__iPhone {
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    width: 45%;
-//  }
-//
-//  &__circle {
-//    width: 18rem;
-//    height: 18rem;
-//    background: #07ACE6;
-//    border-radius: 100%;
-//    z-index: 0;
-//    position: relative;
-//  }
-//
-//  .iPhone {
-//    width: 22rem;
-//    z-index: 1;
-//    position: absolute;
-//  }
-//
-//  .box__text {
-//    margin-left: 2rem;
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    width: 50%;
-//
-//    .box__border {
-//      width: 80%;
-//      border: 4px solid #08A6E4;
-//      margin-bottom: 2rem;
-//    }
-//  }
-//}
-//
-//.box {
-//  width: 65%;
-//  height: 60vh;
-//  display: flex;
-//  align-items: center;
-//
+.box__iPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+
+  &__circle {
+    width: 18rem;
+    height: 18rem;
+    background: #07ACE6;
+    border-radius: 100%;
+    z-index: 0;
+    position: relative;
+  }
+
+  .iPhone {
+    width: 22rem;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
 //  &__container {
 //    width: 100%;
 //    display: flex;
