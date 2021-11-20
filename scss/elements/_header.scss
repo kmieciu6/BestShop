@@ -1,55 +1,278 @@
-header {
-  box-shadow: 0 3px 6px #00000029;
-  position: fixed;
-  background: white;
-  width: 100%;
-  z-index: 2;
-}
+.header {
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 
-.container {
-  height: 4.4rem;
-  margin: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-
-  @include desktop {
+  &__container {
+    display: flex;
     justify-content: space-around;
-    margin: 0;
+    align-items: center;
+    height: 100%;
   }
 
-  a {
-    text-decoration: none;
-    color: #08A6E4;
-    font-family: $font-primary;
-    font-weight: lighter;
-    font-size: 2rem;
-    padding-top: 1rem;
+  .nav {
+    &__element {
+      padding: 0 26px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      color: $color-light;
+      font-weight: 700;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      padding: 28px 18px 22px;
+      border-bottom: 4px solid transparent;
+      letter-spacing: 0.1875rem;
+
+      &:hover {
+        color: black;
+        border-color: $background-color-primary;
+      }
+    }
   }
 
-  ul {
-    display: none;
+  &__nav {
+    display: flex;
 
-    @include desktop {
-      display: flex;
-      margin-top: 1.5rem;
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
 
-      a {
-        color: #A5A5A5;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 1.5rem 1.3rem;
-        margin: 0 1.5rem;
-        font-size: 0.7rem;
-        font-weight: bold;
-        font-family: "Open Sans", serif;
+      .nav__element {
+        padding: 0;
+      }
 
-        &:hover {
-          color: #000000;
-          padding-bottom: 1.8rem;
-          border-bottom: 4px solid #08A6E4;
-          opacity: 1;
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
+
+    @include tablet {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
+
+      .nav__element {
+        padding: 0;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
+  }
+
+  .menu {
+    &__btn {
+      display: none;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+
+      @include mobile {
+        &:checked {
+          ~ .header__nav {
+            display: flex;
+          }
+
+          ~ .menu__toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
         }
+      }
+
+      @include tablet {
+        &:checked {
+          ~ .header__nav {
+            display: flex;
+          }
+
+          ~ .menu__toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__toggle {
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $background-color-primary;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile {
+        display: block;
+      }
+
+      @include tablet {
+        display: block;
       }
     }
   }
 }
+
+
+
+
+//
+//header {
+//  box-shadow: 0 3px 6px #00000029;
+//  position: fixed;
+//  background: white;
+//  width: 100%;
+//  z-index: 2;
+//}
+//
+//.container {
+//  height: 4.4rem;
+//  margin: 0 2rem;
+//  display: flex;
+//  justify-content: space-between;
+//
+//  @include desktop {
+//    justify-content: space-around;
+//    margin: 0;
+//  }
+//
+//  a {
+//    text-decoration: none;
+//    color: #08A6E4;
+//    font-family: $font-primary;
+//    font-weight: lighter;
+//    font-size: 2rem;
+//    padding-top: 1rem;
+//  }
+//
+//  .header__nav {
+//    display: flex;
+//    margin-top: 1.5rem;
+//
+//    @include mobile {
+//      position: absolute;
+//      left: 0;
+//      top: 95px;
+//      flex-direction: column;
+//      background-color: $background-color-white;
+//      width: 100%;
+//      padding-bottom: 20px;
+//      display: none;
+//
+//      .nav__element {
+//        padding: 0;
+//      }
+//      .nav__link {
+//        display: block;
+//        padding: 14px 20px;
+//      }
+//    }
+//
+//    .menu {
+//      &__btn {
+//        display: none;
+//        position: absolute;
+//        top: -9999px;
+//        left: -9999px;
+//        opacity: 0;
+//
+//        @include mobile {
+//
+//          &:checked {
+//            ~ .header__nav {
+//              display: flex;
+//            }
+//
+//            ~ .menu__toggle {
+//              span {
+//                &:nth-child(1) {
+//                  transform: rotate(45deg) translate(2px, 5px);
+//                }
+//
+//                &:nth-child(2) {
+//                  opacity: 0;
+//                }
+//
+//                &:nth-child(3) {
+//                  transform: rotate(-45deg) translate(2px, 5px);
+//                }
+//              }
+//            }
+//          }
+//        }
+//      }
+//
+//      &__toggle {
+//        display: none;
+//
+//        span {
+//          width: 20px;
+//          height: 2px;
+//        }
+//      }
+//    }
+//
+//    a {
+//      color: #A5A5A5;
+//      text-decoration: none;
+//      text-transform: uppercase;
+//      padding: 1.5rem 1.3rem;
+//      margin: 0 1.5rem;
+//      font-size: 0.7rem;
+//      font-weight: bold;
+//      font-family: "Open Sans", serif;
+//
+//      &:hover {
+//        color: #000000;
+//        padding-bottom: 1.8rem;
+//        border-bottom: 4px solid $background-color-primary;
+//        opacity: 1;
+//      }
+//    }
+//  }
+//}
