@@ -1,12 +1,22 @@
 .header {
   height: 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  position: fixed;
+  width: 100%;
+  background: $background-color-white;
+  z-index: 2;
 
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+    margin: 0 3rem;
+
+    @include desktop {
+      justify-content: space-around;
+      margin: 0;
+    }
   }
 
   .nav {
