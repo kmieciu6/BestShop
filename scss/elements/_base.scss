@@ -2,36 +2,33 @@
   box-sizing: border-box;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+body {
+  font-family: $font-open-sans;
 }
 
-h1, h2, h3 {
-  display: flex;
-  text-align: center;
-  color: $color-main;
-  font-family: $font-primary;
-}
-
-h1 {
-  font-size: 3rem;
+a {
+  text-decoration: none;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-family: $font-raleway;
+  font-size: 2.25rem;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 1.3rem;
+.container {
+  width: 1352px;
+  margin: 0 auto;
+
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
-p {
-  color: $color-main;
-  font-family: $font-secondary;
-  font-size: 1.1rem;
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: $color-primary;
 }

@@ -1,30 +1,28 @@
-.button {
-  border: 0;
-  border-radius: 40px;
-  padding: 0.8rem 4rem;
-  background: $background-color-primary;
+.btn {
   color: white;
-  transition: 0.5s;
   font-weight: bold;
-  font-family: $font-secondary;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: $button-radius;
+  border: none;
 
-  &__red {
-    background: $background-color-red;
+
+  &--primary {
+    background-color: $color-primary;
+    border-radius: $button-radius;
+    box-shadow: 3px 10px 14px $color-primary-shadow;
   }
 
-  &__green {
-    background: $background-color-green;
+  &--redish {
+    background-color: $color-redish;
   }
 
-  &:hover {
-    @include desktop {
-      color: black;
-      border-radius: 40px 10px 40px 10px;
-    }
+  &--green {
+    background-color: $color-green;
   }
 
-  &:active {
-    background-color: darkblue;
-    color: white;
+  &--large {
+    padding: 22px 155px;
   }
 }
+
