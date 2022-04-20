@@ -19,6 +19,15 @@
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    color: $background-color-primary;
+    font-size: 2rem;
+  }
+
   .nav {
     &__element {
       padding: 0 26px;
@@ -50,7 +59,7 @@
     @include mobile {
       position: absolute;
       left: 0;
-      top: 95px;
+      top: 70px;
       flex-direction: column;
       background-color: white;
       width: 100%;
@@ -107,9 +116,11 @@
               &:nth-child(1) {
                 transform: rotate(45deg) translate(2px, 5px);
               }
+
               &:nth-child(2) {
                 opacity: 0;
               }
+
               &:nth-child(3) {
                 transform: rotate(-45deg) translate(2px, -5px);
               }
@@ -129,9 +140,11 @@
               &:nth-child(1) {
                 transform: rotate(45deg) translate(2px, 5px);
               }
+
               &:nth-child(2) {
                 opacity: 0;
               }
+
               &:nth-child(3) {
                 transform: rotate(-45deg) translate(2px, -5px);
               }
@@ -167,122 +180,3 @@
     }
   }
 }
-
-
-
-
-//
-//header {
-//  box-shadow: 0 3px 6px #00000029;
-//  position: fixed;
-//  background: white;
-//  width: 100%;
-//  z-index: 2;
-//}
-//
-//.container {
-//  height: 4.4rem;
-//  margin: 0 2rem;
-//  display: flex;
-//  justify-content: space-between;
-//
-//  @include desktop {
-//    justify-content: space-around;
-//    margin: 0;
-//  }
-//
-//  a {
-//    text-decoration: none;
-//    color: #08A6E4;
-//    font-family: $font-primary;
-//    font-weight: lighter;
-//    font-size: 2rem;
-//    padding-top: 1rem;
-//  }
-//
-//  .header__nav {
-//    display: flex;
-//    margin-top: 1.5rem;
-//
-//    @include mobile {
-//      position: absolute;
-//      left: 0;
-//      top: 95px;
-//      flex-direction: column;
-//      background-color: $background-color-white;
-//      width: 100%;
-//      padding-bottom: 20px;
-//      display: none;
-//
-//      .nav__element {
-//        padding: 0;
-//      }
-//      .nav__link {
-//        display: block;
-//        padding: 14px 20px;
-//      }
-//    }
-//
-//    .menu {
-//      &__btn {
-//        display: none;
-//        position: absolute;
-//        top: -9999px;
-//        left: -9999px;
-//        opacity: 0;
-//
-//        @include mobile {
-//
-//          &:checked {
-//            ~ .header__nav {
-//              display: flex;
-//            }
-//
-//            ~ .menu__toggle {
-//              span {
-//                &:nth-child(1) {
-//                  transform: rotate(45deg) translate(2px, 5px);
-//                }
-//
-//                &:nth-child(2) {
-//                  opacity: 0;
-//                }
-//
-//                &:nth-child(3) {
-//                  transform: rotate(-45deg) translate(2px, 5px);
-//                }
-//              }
-//            }
-//          }
-//        }
-//      }
-//
-//      &__toggle {
-//        display: none;
-//
-//        span {
-//          width: 20px;
-//          height: 2px;
-//        }
-//      }
-//    }
-//
-//    a {
-//      color: #A5A5A5;
-//      text-decoration: none;
-//      text-transform: uppercase;
-//      padding: 1.5rem 1.3rem;
-//      margin: 0 1.5rem;
-//      font-size: 0.7rem;
-//      font-weight: bold;
-//      font-family: "Open Sans", serif;
-//
-//      &:hover {
-//        color: #000000;
-//        padding-bottom: 1.8rem;
-//        border-bottom: 4px solid $background-color-primary;
-//        opacity: 1;
-//      }
-//    }
-//  }
-//}
